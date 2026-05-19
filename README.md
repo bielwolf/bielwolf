@@ -15,17 +15,3 @@
     </a>
   </p>
 </div>
-
----
-
-### `whoami.json`
-
-```javascript
-const gabrielLobo = {
-  nome:       "Gabriel Lobo",
-  funcao:     "Desenvolvedor Full Stack • IA Aplicada • Automação",
-  baseado:    "Fortaleza - CE",
-  foco:       ["Web Development", "SaaS", "Sistemas Multiagentes", "UX/UI"],
-  diferencial:"Arquitetura limpa + Integração inteligente com modelos LLM",
-  objetivo:   "Orquestrar código e inteligência artificial para criar produtos escaláveis."
-};
