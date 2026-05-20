@@ -81,12 +81,10 @@ function buildDashboard(repos, topLangs) {
     hour: '2-digit', minute: '2-digit'
   });
 
-  // Forçamos o array com as linguagens exatas que você quer exibir
-  const listaFixaLangs = ['Python', 'JavaScript', 'Java', 'Go', 'C#'];
-
-  const langBadges = listaFixaLangs
+  const langBadges = topLangs
     .map(lang => {
-     const colors = {
+      // Mapeamento com as linguagens solicitadas e seus logos oficiais
+      const colors = {
         TypeScript: '3178C6&logo=typescript&logoColor=white', 
         JavaScript: 'F7DF1E&logo=javascript&logoColor=black',
         Python: '3776AB&logo=python&logoColor=white', 
@@ -104,13 +102,12 @@ function buildDashboard(repos, topLangs) {
     })
     .join(' ');
 
+  // Retorna estritamente as 3 linhas esperadas pelo molde do seu README
   return `| métrica | valor |
 |---|---|
-| repositórios originais | **${original}** |
-| repositórios totais | **${repos.length}** (${forked} forks) |
-| stars recebidas | **${stars}** |
+| repositórios públicos | **${repos.length}** |
 | linguagens principais | ${langBadges} |
-| última sync | ${now} (UTC-3) |`;
+| última atualização | ${now} (Horário de Fortaleza) |`;
 }
 
 // ── Substitui o bloco entre os marcadores no README ───────────────────────
