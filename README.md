@@ -150,14 +150,19 @@ Context API e React Router.
 ### [ Telemetria do GitHub ]
 
 <div align="center">
+
 <!-- GitHub Stats — instância alternativa rickstaa (menos rate limit) -->
 <img src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username=bielwolf&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=7F77DD&icon_color=378ADD&text_color=e6edf3&count_private=true" alt="GitHub Stats" />
+
 <!-- Top Languages — mesma instância -->
 <img src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/top-langs/?username=bielwolf&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=7F77DD&text_color=e6edf3&langs_count=8" alt="Top Languages" />
+
 <!-- Streak Stats — herokuapp (mais estável que demolab) -->
 <img src="https://github-readme-streak-stats.herokuapp.com/?user=bielwolf&theme=tokyonight&hide_border=true&background=0D1117&ring=7F77DD&fire=378ADD&currStreakLabel=AFA9EC&sideLabels=8b949e&dates=8b949e" alt="GitHub Streak" />
+
 <!-- Activity Graph — tokyo-night -->
 <img src="https://github-readme-activity-graph.vercel.app/graph?username=bielwolf&theme=tokyo-night&hide_border=true&bg_color=0d1117&color=AFA9EC&line=7F77DD&point=378ADD&area=true&area_color=1a1440" alt="Activity Graph" />
+
 </div>
 
 ---
@@ -171,3 +176,7 @@ Context API e React Router.
 </div>
 
 ---
+
+<div align="center">
+  <i>"Orquestrar código e inteligência artificial para criar produtos escaláveis."</i>
+</div>
