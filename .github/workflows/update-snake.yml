@@ -1,0 +1,33 @@
+name: Gerar Contribution Snake
+
+on:
+  workflow_dispatch:      # roda manualmente pelo painel do GitHub
+  schedule:
+    - cron: "0 0 * * *"  # roda todo dia à meia-noite (UTC)
+
+permissions:
+  contents: write
+
+jobs:
+  generate-snake:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Baixar repositório
+        uses: actions/checkout@v4
+
+      - name: Gerar snake SVG
+        uses: Platane/snk@v3
+        with:
+          github_user_name: bielwolf
+          outputs: |
+            assets/snake.svg
+            assets/snake-dark.svg?palette=github-dark
+
+      - name: Commitar snake atualizada
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add assets/snake.svg assets/snake-dark.svg
+          git diff --cached --quiet || git commit -m "chore: atualizar contribution snake [skip ci]"
+          git push
