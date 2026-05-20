@@ -140,9 +140,11 @@ Context API e React Router.
 <!-- START_DASHBOARD -->
 | métrica | valor |
 |---|---|
-| repositórios públicos | — |
-| linguagens principais | — |
-| última atualização | — |
+| repositórios originais | **33** |
+| repositórios totais | **34** (1 forks) |
+| stars recebidas | **0** |
+| linguagens principais | ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square) ![C++](https://img.shields.io/badge/C%2B%2B-7F77DD?style=flat-square) ![Cython](https://img.shields.io/badge/Cython-7F77DD?style=flat-square) ![Jupyter Notebook](https://img.shields.io/badge/Jupyter%20Notebook-7F77DD?style=flat-square) ![C](https://img.shields.io/badge/C-7F77DD?style=flat-square) |
+| última sync | 20/05/2026, 00:14 (UTC-3) |
 <!-- END_DASHBOARD -->
 
 ---
