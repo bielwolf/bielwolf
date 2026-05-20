@@ -1,9 +1,9 @@
 name: Atualizar Dashboard
 
 on:
-  workflow_dispatch:       # roda manualmente pelo painel do GitHub
+  workflow_dispatch:
   schedule:
-    - cron: "0 */6 * * *"  # roda automaticamente a cada 6 horas
+    - cron: "0 */6 * * *"
 
 permissions:
   contents: write
@@ -23,7 +23,7 @@ jobs:
       - name: Configurar Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 24
 
       - name: Gerar dashboard
         env:
