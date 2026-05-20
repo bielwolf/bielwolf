@@ -86,12 +86,17 @@ function buildDashboard(repos, topLangs) {
 
   const langBadges = listaFixaLangs
     .map(lang => {
-      const colors = {
-        Python: '3776AB',
-        JavaScript: 'F7DF1E&logoColor=black',
-        Java: '007396',
-        Go: '00ADD8',
-        'C#': '239120'
+     const colors = {
+        TypeScript: '3178C6&logo=typescript&logoColor=white', 
+        JavaScript: 'F7DF1E&logo=javascript&logoColor=black',
+        Python: '3776AB&logo=python&logoColor=white', 
+        HTML: 'E34F26&logo=html5&logoColor=white', 
+        CSS: '1572B6&logo=css3&logoColor=white',
+        Shell: '89e051&logo=gnubash&logoColor=black', 
+        Dockerfile: '2496ED&logo=docker&logoColor=white',
+        Java: '007396&logo=openjdk&logoColor=white',
+        Go: '00ADD8&logo=go&logoColor=white',
+        'C#': '239120&logo=csharp&logoColor=white'
       };
       
       const color = colors[lang] || '7F77DD';
