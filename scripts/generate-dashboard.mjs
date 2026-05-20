@@ -1,6 +1,6 @@
 // scripts/generate-dashboard.mjs
 // Roda via GitHub Actions a cada 6h
-// Consulta a API do GitHub e sobrescreve a seção <!-- START_DASHBOARD --> no README.md
+// Consulta a API do GitHub e sobrescreve a seção no README.md
 
 import { readFileSync, writeFileSync } from 'fs';
 import { join, dirname } from 'path';
@@ -24,9 +24,10 @@ async function fetchRepos() {
   let repos = [];
 
   while (true) {
+    // Requisição limpa para trazer estritamente o conteúdo público sem misturar escopos
     const res = await fetch(
-      `https://api.github.com/users/${USERNAME}/repos?per_page=100&page=${page}&type=public`,
-      { headers }
+      `https://api.github.com/users/${USERNAME}/repos?per_page=100&page=${page}`,
+      { headers: { 'Accept': 'application/vnd.github+json' } }
     );
 
     if (!res.ok) {
@@ -58,14 +59,13 @@ async function fetchLanguages(repoName) {
 async function aggregateLanguages(repos) {
   const totals = {};
 
-  await Promise.all(
-    repos.map(async (repo) => {
-      const langs = await fetchLanguages(repo.name);
-      for (const [lang, bytes] of Object.entries(langs)) {
-        totals[lang] = (totals[lang] || 0) + bytes;
-      }
-    })
-  );
+  // O loop sequencial evita estouro de rate limit e garante a soma correta dos bytes
+  for (const repo of repos) {
+    const langs = await fetchLanguages(repo.name);
+    for (const [lang, bytes] of Object.entries(langs)) {
+      totals[lang] = (totals[lang] || 0) + bytes;
+    }
+  }
 
   return Object.entries(totals)
     .sort((a, b) => b[1] - a[1])
@@ -81,29 +81,33 @@ function buildDashboard(repos, topLangs) {
     hour: '2-digit', minute: '2-digit'
   });
 
-  const forked   = repos.filter(r => r.fork).length;
-  const original = repos.length - forked;
-  const stars    = repos.reduce((acc, r) => acc + r.stargazers_count, 0);
-
   const langBadges = topLangs
     .map(lang => {
+      // Mapeamento com as linguagens solicitadas e seus logos oficiais
       const colors = {
-        TypeScript: '3178C6', JavaScript: 'F7DF1E&logoColor=black',
-        Python: '3776AB', HTML: 'E34F26', CSS: '1572B6',
-        Shell: '89e051&logoColor=black', Dockerfile: '2496ED'
+        TypeScript: '3178C6&logo=typescript&logoColor=white', 
+        JavaScript: 'F7DF1E&logo=javascript&logoColor=black',
+        Python: '3776AB&logo=python&logoColor=white', 
+        HTML: 'E34F26&logo=html5&logoColor=white', 
+        CSS: '1572B6&logo=css3&logoColor=white',
+        Shell: '89e051&logo=gnubash&logoColor=black', 
+        Dockerfile: '2496ED&logo=docker&logoColor=white',
+        Java: '007396&logo=openjdk&logoColor=white',
+        Go: '00ADD8&logo=go&logoColor=white',
+        'C#': '239120&logo=csharp&logoColor=white'
       };
+      
       const color = colors[lang] || '7F77DD';
       return `![${lang}](https://img.shields.io/badge/${encodeURIComponent(lang)}-${color}?style=flat-square)`;
     })
     .join(' ');
 
+  // Retorna estritamente as 3 linhas esperadas pelo molde do seu README
   return `| métrica | valor |
 |---|---|
-| repositórios originais | **${original}** |
-| repositórios totais | **${repos.length}** (${forked} forks) |
-| stars recebidas | **${stars}** |
+| repositórios públicos | **${repos.length}** |
 | linguagens principais | ${langBadges} |
-| última sync | ${now} (UTC-3) |`;
+| última atualização | ${now} (Horário de Fortaleza) |`;
 }
 
 // ── Substitui o bloco entre os marcadores no README ───────────────────────
@@ -111,8 +115,8 @@ function updateReadme(newBlock) {
   const readmePath = join(ROOT, 'README.md');
   const content    = readFileSync(readmePath, 'utf8');
 
-  const START = '<!-- START_DASHBOARD -->';
-  const END   = '<!-- END_DASHBOARD -->';
+  const START = '';
+  const END   = '';
 
   const startIdx = content.indexOf(START);
   const endIdx   = content.indexOf(END);
