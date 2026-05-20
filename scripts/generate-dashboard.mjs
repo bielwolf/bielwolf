@@ -81,17 +81,19 @@ function buildDashboard(repos, topLangs) {
     hour: '2-digit', minute: '2-digit'
   });
 
-  const forked   = repos.filter(r => r.fork).length;
-  const original = repos.length - forked;
-  const stars    = repos.reduce((acc, r) => acc + r.stargazers_count, 0);
+  // Forçamos o array com as linguagens exatas que você quer exibir
+  const listaFixaLangs = ['Python', 'JavaScript', 'Java', 'Go', 'C#'];
 
-  const langBadges = topLangs
+  const langBadges = listaFixaLangs
     .map(lang => {
       const colors = {
-        TypeScript: '3178C6', JavaScript: 'F7DF1E&logoColor=black',
-        Python: '3776AB', HTML: 'E34F26', CSS: '1572B6',
-        Shell: '89e051&logoColor=black', Dockerfile: '2496ED'
+        Python: '3776AB',
+        JavaScript: 'F7DF1E&logoColor=black',
+        Java: '007396',
+        Go: '00ADD8',
+        'C#': '239120'
       };
+      
       const color = colors[lang] || '7F77DD';
       return `![${lang}](https://img.shields.io/badge/${encodeURIComponent(lang)}-${color}?style=flat-square)`;
     })
