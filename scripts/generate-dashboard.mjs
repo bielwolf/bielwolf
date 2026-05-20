@@ -95,11 +95,12 @@ function buildDashboard(repos, topLangs) {
     })
     .join(' ');
 
-  return `| métrica | valor |
+ return `| métrica | valor |
 |---|---|
 | repositórios públicos | **${repos.length}** |
 | linguagens principais | ${langBadges} |
 | última atualização | ${now} (Horário de Fortaleza) |`;
+}
 
 // ── Substitui o bloco entre os marcadores no README ───────────────────────
 function updateReadme(newBlock) {
