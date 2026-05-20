@@ -24,7 +24,6 @@ async function fetchRepos() {
   let repos = [];
 
   while (true) {
-    // Requisição limpa para trazer estritamente o conteúdo público sem misturar escopos
     const res = await fetch(
       `https://api.github.com/users/${USERNAME}/repos?per_page=100&page=${page}`,
       { headers: { 'Accept': 'application/vnd.github+json' } }
@@ -59,7 +58,6 @@ async function fetchLanguages(repoName) {
 async function aggregateLanguages(repos) {
   const totals = {};
 
-  // O loop sequencial evita estouro de rate limit e garante a soma correta dos bytes
   for (const repo of repos) {
     const langs = await fetchLanguages(repo.name);
     for (const [lang, bytes] of Object.entries(langs)) {
@@ -83,13 +81,12 @@ function buildDashboard(repos, topLangs) {
 
   const langBadges = topLangs
     .map(lang => {
-      // Mapeamento com as linguagens solicitadas e seus logos oficiais
       const colors = {
         TypeScript: '3178C6&logo=typescript&logoColor=white', 
         JavaScript: 'F7DF1E&logo=javascript&logoColor=black',
         Python: '3776AB&logo=python&logoColor=white', 
         HTML: 'E34F26&logo=html5&logoColor=white', 
-        CSS: '1572B6&logo=css3&logoColor=white',
+        CSS: '1572B6&logo=css3&loveColor=white',
         Shell: '89e051&logo=gnubash&logoColor=black', 
         Dockerfile: '2496ED&logo=docker&logoColor=white',
         Java: '007396&logo=openjdk&logoColor=white',
@@ -102,7 +99,6 @@ function buildDashboard(repos, topLangs) {
     })
     .join(' ');
 
-  // Retorna estritamente as 3 linhas esperadas pelo molde do seu README
   return `| métrica | valor |
 |---|---|
 | repositórios públicos | **${repos.length}** |
@@ -115,6 +111,7 @@ function updateReadme(newBlock) {
   const readmePath = join(ROOT, 'README.md');
   const content    = readFileSync(readmePath, 'utf8');
 
+  // CORRIGIDO: Marcadores restaurados para evitar fatiamento quebrado do arquivo
   const START = '';
   const END   = '';
 
@@ -132,7 +129,7 @@ function updateReadme(newBlock) {
     content.slice(endIdx);
 
   writeFileSync(readmePath, updated, 'utf8');
-  console.log('✅ README.md atualizado com sucesso.');
+  console.log('✅ README.md updated successfully.');
 }
 
 // ── Main ───────────────────────────────────────────────────────────────────
