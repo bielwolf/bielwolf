@@ -97,12 +97,9 @@ function buildDashboard(repos, topLangs) {
 
   return `| métrica | valor |
 |---|---|
-| repositórios originais | **${original}** |
-| repositórios totais | **${repos.length}** (${forked} forks) |
-| stars recebidas | **${stars}** |
+| repositórios públicos | **${repos.length}** |
 | linguagens principais | ${langBadges} |
-| última sync | ${now} (UTC-3) |`;
-}
+| última atualização | ${now} (Horário de Fortaleza) |`;
 
 // ── Substitui o bloco entre os marcadores no README ───────────────────────
 function updateReadme(newBlock) {
