@@ -86,7 +86,7 @@ function buildDashboard(repos, topLangs) {
         JavaScript: 'F7DF1E&logo=javascript&logoColor=black',
         Python: '3776AB&logo=python&logoColor=white', 
         HTML: 'E34F26&logo=html5&logoColor=white', 
-        CSS: '1572B6&logo=css3&loveColor=white',
+        CSS: '1572B6&logo=css3&logoColor=white',
         Shell: '89e051&logo=gnubash&logoColor=black', 
         Dockerfile: '2496ED&logo=docker&logoColor=white',
         Java: '007396&logo=openjdk&logoColor=white',
@@ -111,7 +111,7 @@ function updateReadme(newBlock) {
   const readmePath = join(ROOT, 'README.md');
   const content    = readFileSync(readmePath, 'utf8');
 
-  // CORRIGIDO: Marcadores restaurados para evitar fatiamento quebrado do arquivo
+  // FIX: Marcadores explícitos restaurados
   const START = '';
   const END   = '';
 
