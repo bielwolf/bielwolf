@@ -58,12 +58,14 @@ async function fetchLanguages(repoName) {
 async function aggregateLanguages(repos) {
   const totals = {};
 
-  for (const repo of repos) {
-    const langs = await fetchLanguages(repo.name);
-    for (const [lang, bytes] of Object.entries(langs)) {
-      totals[lang] = (totals[lang] || 0) + bytes;
-    }
-  }
+  await Promise.all(
+    repos.map(async (repo) => {
+      const langs = await fetchLanguages(repo.name);
+      for (const [lang, bytes] of Object.entries(langs)) {
+        totals[lang] = (totals[lang] || 0) + bytes;
+      }
+    })
+  );
 
   return Object.entries(totals)
     .sort((a, b) => b[1] - a[1])
@@ -95,11 +97,13 @@ function buildDashboard(repos, topLangs) {
     })
     .join(' ');
 
- return `| métrica | valor |
+  return `| métrica | valor |
 |---|---|
-| repositórios públicos | **${repos.length}** |
+| repositórios originais | **${original}** |
+| repositórios totais | **${repos.length}** (${forked} forks) |
+| stars recebidas | **${stars}** |
 | linguagens principais | ${langBadges} |
-| última atualização | ${now} (Horário de Fortaleza) |`;
+| última sync | ${now} (UTC-3) |`;
 }
 
 // ── Substitui o bloco entre os marcadores no README ───────────────────────
