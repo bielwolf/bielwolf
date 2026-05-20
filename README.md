@@ -151,11 +151,11 @@ Context API e React Router.
 
 <div align="center">
 
-[![GitHub Stats](https://github-readme-stats.vercel.app/api?username=bielwolf&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=7F77DD&icon_color=378ADD&text_color=e6edf3)](https://github.com/bielwolf)
-
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=bielwolf&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=7F77DD&text_color=e6edf3)](https://github.com/bielwolf)
-
-[![Streak](https://streak-stats.demolab.com?user=bielwolf&theme=tokyonight&hide_border=true&background=0d1117&ring=7F77DD&fire=378ADD&currStreakLabel=AFA9EC)](https://github.com/bielwolf)
+[<div>
+<a href="https://github.com/bielwolf">
+<img loading="lazy" height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=bielwolf&layout=compact&langs_count=7&theme=dracula"/>
+<img loading="lazy" height="180em" src="https://github-readme-stats.vercel.app/api?username=bielwolf&show_icons=true&theme=dracula&include_all_commits=true&count_private=true"/>
+</div>
 
 [![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=bielwolf&theme=tokyo-night&hide_border=true&bg_color=0d1117&color=7F77DD&line=378ADD&point=AFA9EC)](https://github.com/bielwolf)
 
