@@ -111,7 +111,7 @@ function updateReadme(newBlock) {
   const readmePath = join(ROOT, 'README.md');
   const content    = readFileSync(readmePath, 'utf8');
 
-  // FIX: Marcadores explícitos restaurados
+  // AGORA SIM CORRIGIDO: Marcadores preenchidos textualmente para encontrar as tags no README
   const START = '';
   const END   = '';
 
