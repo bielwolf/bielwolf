@@ -3,6 +3,12 @@
 |---|---|
 | repositórios públicos | **34** |
 | linguagens principais | ![Python](https://img.shields.io/badge/Python-3776AB&logo=python&logoColor=white?style=flat-square) ![C++](https://img.shields.io/badge/C%2B%2B-7F77DD?style=flat-square) ![Cython](https://img.shields.io/badge/Cython-7F77DD?style=flat-square) ![Jupyter Notebook](https://img.shields.io/badge/Jupyter%20Notebook-7F77DD?style=flat-square) ![C](https://img.shields.io/badge/C-7F77DD?style=flat-square) |
+| última atualização | 27/05/2026, 00:29 (Horário de Fortaleza) |
+
+| métrica | valor |
+|---|---|
+| repositórios públicos | **34** |
+| linguagens principais | ![Python](https://img.shields.io/badge/Python-3776AB&logo=python&logoColor=white?style=flat-square) ![C++](https://img.shields.io/badge/C%2B%2B-7F77DD?style=flat-square) ![Cython](https://img.shields.io/badge/Cython-7F77DD?style=flat-square) ![Jupyter Notebook](https://img.shields.io/badge/Jupyter%20Notebook-7F77DD?style=flat-square) ![C](https://img.shields.io/badge/C-7F77DD?style=flat-square) |
 | última atualização | 26/05/2026, 17:06 (Horário de Fortaleza) |
 
 | métrica | valor |
