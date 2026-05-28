@@ -1,15 +1,3 @@
-
-| métrica | valor |
-|---|---|
-| repositórios públicos | **34** |
-| linguagens principais | ![Python](https://img.shields.io/badge/Python-3776AB&logo=python&logoColor=white?style=flat-square) ![C++](https://img.shields.io/badge/C%2B%2B-7F77DD?style=flat-square) ![Cython](https://img.shields.io/badge/Cython-7F77DD?style=flat-square) ![Jupyter Notebook](https://img.shields.io/badge/Jupyter%20Notebook-7F77DD?style=flat-square) ![C](https://img.shields.io/badge/C-7F77DD?style=flat-square) |
-| última atualização | 28/05/2026, 06:57 (Horário de Fortaleza) |
-
-| métrica | valor |
-|---|---|
-| repositórios públicos | **34** |
-| linguagens principais | ![Python](https://img.shields.io/badge/Python-3776AB&logo=python&logoColor=white?style=flat-square) ![C++](https://img.shields.io/badge/C%2B%2B-7F77DD?style=flat-square) ![Cython](https://img.shields.io/badge/Cython-7F77DD?style=flat-square) ![Jupyter Notebook](https://img.shields.io/badge/Jupyter%20Notebook-7F77DD?style=flat-square) ![C](https://img.shields.io/badge/C-7F77DD?style=flat-square) |
-| última atualização | 27/05/2026, 23:49 (Horário de Fortaleza) |
 # Gabriel Lobo
 
 **Full Stack Developer · IA Aplicada · Automação**
@@ -135,11 +123,13 @@ Context API e React Router.
 
 ---
 
+<!-- START_DASHBOARD -->
 | métrica | valor |
 |---|---|
 | repositórios públicos | **34** |
-| linguagens principais | ![Java](https://img.shields.io/badge/Java-007396?style=flat-square&logo=openjdk&logoColor=white) ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black) ![C#](https://img.shields.io/badge/C%23-239120?style=flat-square&logo=csharp&logoColor=white) |
-| última atualização | 27/05/2026, 18:58 (Horário de Fortaleza) |
+| linguagens principais | ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) ![HTML](https://img.shields.io/badge/HTML-E34F26?style=flat-square&logo=html5&logoColor=white) ![CSS](https://img.shields.io/badge/CSS-1572B6?style=flat-square&logo=css3&logoColor=white) |
+| última atualização | 28/05/2026, 06:57 (Horário de Fortaleza) |
+<!-- END_DASHBOARD -->
 
 ---
 
