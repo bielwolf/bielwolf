@@ -126,9 +126,9 @@ Context API e React Router.
 <!-- START_DASHBOARD -->
 | métrica | valor |
 |---|---|
-| repositórios públicos | **34** |
-| linguagens principais | ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) ![HTML](https://img.shields.io/badge/HTML-E34F26?style=flat-square&logo=html5&logoColor=white) ![CSS](https://img.shields.io/badge/CSS-1572B6?style=flat-square&logo=css3&logoColor=white) |
-| última atualização | 28/05/2026, 06:57 (Horário de Fortaleza) |
+| repositórios públicos | **33** |
+| linguagens principais | ![Python](https://img.shields.io/badge/Python-3776AB&logo=python&logoColor=white?style=flat-square) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E&logo=javascript&logoColor=black?style=flat-square) ![HTML](https://img.shields.io/badge/HTML-E34F26&logo=html5&logoColor=white?style=flat-square) ![CSS](https://img.shields.io/badge/CSS-1572B6&logo=css3&logoColor=white?style=flat-square) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6&logo=typescript&logoColor=white?style=flat-square) |
+| última atualização | 28/05/2026, 10:06 (Horário de Fortaleza) |
 <!-- END_DASHBOARD -->
 
 ---
