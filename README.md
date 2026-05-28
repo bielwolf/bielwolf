@@ -126,9 +126,9 @@ Context API e React Router.
 <!-- START_DASHBOARD -->
 | métrica | valor |
 |---|---|
-| repositórios públicos | **33** |
-| linguagens principais | ![Python](https://img.shields.io/badge/Python-3776AB&logo=python&logoColor=white?style=flat-square) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E&logo=javascript&logoColor=black?style=flat-square) ![HTML](https://img.shields.io/badge/HTML-E34F26&logo=html5&logoColor=white?style=flat-square) ![CSS](https://img.shields.io/badge/CSS-1572B6&logo=css3&logoColor=white?style=flat-square) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6&logo=typescript&logoColor=white?style=flat-square) |
-| última atualização | 28/05/2026, 10:06 (Horário de Fortaleza) |
+| repositórios públicos | **34** |
+| linguagens principais | ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) ![HTML](https://img.shields.io/badge/HTML-E34F26?style=flat-square&logo=html5&logoColor=white) ![CSS](https://img.shields.io/badge/CSS-1572B6?style=flat-square&logo=css3&logoColor=white) |
+| última atualização | 28/05/2026, 06:57 (Horário de Fortaleza) |
 <!-- END_DASHBOARD -->
 
 ---
@@ -147,9 +147,9 @@ Context API e React Router.
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=bielwolf&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=7F77DD&icon_color=378ADD&text_color=e6edf3&count_private=true&cache_seconds=1800" alt="GitHub Stats" />
+<img src="https://github-readme-stats-brown-eta-89.vercel.app/api?username=bielwolf&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=7F77DD&icon_color=378ADD&text_color=e6edf3&count_private=true&cache_seconds=1800" alt="GitHub Stats" />
 
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=bielwolf&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=7F77DD&text_color=e6edf3&langs_count=8&cache_seconds=1800" alt="Top Languages" />
+<img src="https://github-readme-stats-brown-eta-89.vercel.app/api/top-langs/?username=bielwolf&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=7F77DD&text_color=e6edf3&langs_count=8&cache_seconds=1800" alt="Top Languages" />
 
 <img src="https://github-readme-streak-stats.herokuapp.com/?user=bielwolf&theme=tokyonight&hide_border=true&background=0D1117&ring=7F77DD&fire=378ADD&currStreakLabel=AFA9EC&sideLabels=8b949e&dates=8b949e" alt="GitHub Streak" />
 
