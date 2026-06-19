@@ -128,7 +128,7 @@ Context API e React Router.
 |---|---|
 | repositórios públicos | **33** |
 | linguagens principais | ![Python](https://img.shields.io/badge/Python-3776AB&logo=python&logoColor=white?style=flat-square) ![C++](https://img.shields.io/badge/C%2B%2B-00599C&logo=cplusplus&logoColor=white?style=flat-square) ![Cython](https://img.shields.io/badge/Cython-3776AB&logo=python&logoColor=white?style=flat-square) ![Jupyter Notebook](https://img.shields.io/badge/Jupyter%20Notebook-F37626&logo=jupyter&logoColor=white?style=flat-square) ![C](https://img.shields.io/badge/C-A8B9CC&logo=c&logoColor=black?style=flat-square) |
-| última atualização | 19/06/2026, 00:58 (Horário de Fortaleza) |
+| última atualização | 19/06/2026, 07:21 (Horário de Fortaleza) |
 <!-- END_DASHBOARD -->
 
 ---
